@@ -365,7 +365,7 @@ a img.aligncenter {
     opacity: .6;
 }
 .heading{
-	color: #fff;
+	color: #cccccc;
     display: table-cell;
     bottom: 10%;
 	vertical-align: bottom;
@@ -376,7 +376,7 @@ a img.aligncenter {
     text-align: left;
     margin-left: 5%;
     position: relative;
-	color: #ffffff;
+	color: #cccccc;
 	font-weight: 700;
 	font-size: 62px;
 	text-transform: uppercase;
@@ -387,7 +387,7 @@ a img.aligncenter {
 }
 
 .heading h3{
-    color: ffffff;
+    color: #cccccc;
     text-align: left; 
     margin-left: 13%;
 }
