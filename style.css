@@ -498,7 +498,9 @@ xclip
 .section.lb {
     background-color: #f2f3f5;
 }
-
+.section.bb {
+    background-color: #e5e5cc;    ;
+}
 .section.db {
     background-color: #111111;
 }
@@ -1204,17 +1206,25 @@ xclip
     color: #999;
 }
 
-.message-box h2 {
+.message-box h3 {
     font-size: 38px;
-    font-weight: 300;
+    font-weight: 500;
     padding: 0 0 10px;
     margin: 0;
     line-height: 62px;
     margin-top: 0;
     text-transform: none;
+
+    /* font-size: 38px;
+    font-weight: 500;
+    line-height: 62px;
+    margin: 0 0 25px;
+    padding: 0;
+    text-transform: none; */
 }
 
 .message-box p {
+    color: #737373;
     margin-bottom: 20px;
 }
 
