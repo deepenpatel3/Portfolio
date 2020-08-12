@@ -668,13 +668,15 @@ xclip
 .ser-icon{
 	width: 90px;
 	height: 90px;
-	text-align: center;
-	line-height: 90px;
+    text-align: center;
+    
+	/* line-height: 90px; */
 }
 .ser-icon i{
 	font-size: 50px;
 	color: #333333;
 }
+
 .services-inner-box h2{
 	font-size: 22px;
 	font-weight: 600;
@@ -1470,7 +1472,7 @@ hr.invis1 {
 	box-shadow: 0 0 10px #ccc;
 }
 
-.gallery-list .img-overlay {
+/* .gallery-list .img-overlay {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -1484,9 +1486,9 @@ hr.invis1 {
     z-index: 2;
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
-}
+} */
 
-.gallery-list .gallery-single:hover .img-overlay {
+/* .gallery-list .gallery-single:hover .img-overlay {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1495,34 +1497,123 @@ hr.invis1 {
 .gallery-list .gallery-single:hover .img-overlay .hoverbutton{
 	opacity: 1;
 	top: 50%;
-}
+} */
 
 
-.post-box .date{
-	display: inline-block;
+/* .post-box .date{
+    display: inline-block;
+    height: 45px;
 	position: absolute;
-	top: 15px;
-	right: 15px;
-	background: #333333;
+	top: 30px;
+	right: 50px;
+	background: #595959;
 	color: #fff;
 	padding: 10px 15px;
 	text-align: center;
+} */
+.work-box .date{
+    display: inline-block;
+    height: 45px;
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	background: #595959;
+	color: #fff;
+	padding: 10px 15px;
+	/* text-align: center; */
 }
-
+.image{
+    width:350px;
+    height: 225px;
+    border-radius: 3%;
+}
+.view-project-batan{
+    margin-left: 2%; 
+    margin-bottom: 2%;
+}
 .post-thumb{
-	position: relative;
+    position: relative;
+    width: 100%;
 }
-
-.post-box{
+.post-thumb:hover .post-info {
+    opacity: 0.85;
+}
+.post-info{
+    position: absolute;
+    /* font-family: "Raleway-bold"; */
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e5e5cc;
+}
+.post-info h2{
+    position: relative;
+    color: #262626;
+	font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+.post-info p{
+    /* position: absolute; */
+    top: 40%;
+    font-size: large;
+    color: #262626;
+    font-weight: 600;
+    font-family: "Raleway-bold";
+}
+.batan{
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.modal-image{
+    width:100%;
+    height:100%;
+}
+.modal-body p{
+    font-weight: 400;
+}
+.modal-body b{
+    font-weight: 600;
+    color: #4d4d4d
+}
+.list-group-item{
+    height: 80px;
+}
+.list-group-item.active{
+    background-color: #808080;
+    border-color: #808080;
+}
+.gallery-list{
+    top: 30px;
+    /* bottom: 40px */
+}
+.skill-image{
+    margin: 20px;
+    height: 90px;
+    width: 90px
+}
+/* .post-box{
+    
 	-webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
 	box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
-	background: #ffffff;
-}
+	
+} */
 
-.post-box:hover .post-thumb::before{
+/* .post-box:hover .post-thumb::before{
 	opacity: .6;
 	-webkit-transform: translateY(0);
-	transform: translateY(0);
+    transform: translateY(0);
+    visibility: visible;
 }
 
 
@@ -1538,26 +1629,28 @@ hr.invis1 {
 	-webkit-transition: all .5s;
 	transition: all .5s;
 	-webkit-transform: translateY(10px);
-	transform: translateY(10px);
-}
+    transform: translateY(10px);
+    visibility: visible;
+} */
 
-.post-info{
-	padding: 0px 15px 40px 15px;
+/* .post-info{
+	padding: 20px 15px 40px 20px;
 	background: #ffffff;
 	text-align: left;
-	margin-top: 40px;
-}
+    margin-top: 40px;
+    position: static
+} */
 
-.post-info p{
+/* .post-info p{
 	margin: 0px;
 }
 
 .post-info h4{
 	font-size: 20px;
 	font-weight: 700;
-}
+} */
 
-.post-info ul{
+/* .post-info ul{
 	display: block;
 	text-align: center;
 	margin-bottom: 15px;
@@ -1565,7 +1658,7 @@ hr.invis1 {
 .post-info ul li{
 	display: inline-block;
 	text-align: center;
-}
+} */
 
 
 /*------------------------------------------------------------------
@@ -2224,14 +2317,14 @@ select.mobile-device {
 
 .copyrights {
     border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    height: 27%;
     background-color: #1f1f1f;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    padding: 30px 0px;
+    padding: 60px 0px;
     overflow: hidden;
 }
-
 
 /* Footer left */
 
