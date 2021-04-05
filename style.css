@@ -661,27 +661,32 @@ xclip
 
 
 .services-inner-box{
+    width: 100%;
 	padding: 15px;
 	background: #ffffff;
 	margin-bottom: 30px;
 }
 .ser-icon{
-	width: 90px;
-	height: 90px;
-    text-align: center;
+	padding-left: 20px;
+    /* text-align: center; */
     
-	/* line-height: 90px; */
+	/* line-height: 40px; */
 }
 .ser-icon i{
+    width: 90px;
+	height: 90px;
 	font-size: 50px;
 	color: #333333;
 }
 
-.services-inner-box h2{
+.services-inner-box h2 {
 	font-size: 22px;
 	font-weight: 600;
 }
 
+.services-inner-box p {
+    margin-bottom: 5px;
+}
 
 /*------------------------------------------------------------------
     PORTFOLIO
@@ -1511,16 +1516,17 @@ hr.invis1 {
 	padding: 10px 15px;
 	text-align: center;
 } */
-.work-box .date{
-    display: inline-block;
+.work-box-date{
+    /* display: inline-block; */
+    float: right;
     height: 45px;
-	position: absolute;
-	top: 30px;
-	right: 50px;
+	position: relative;
+	/* top: 30px;
+	right: 50px; */
 	background: #595959;
 	color: #fff;
 	padding: 10px 15px;
-	/* text-align: center; */
+	text-align: center;
 }
 .image{
     width:350px;
